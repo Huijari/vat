@@ -36,3 +36,10 @@ type ResponseEnvelope struct {
 	XMLName xml.Name     `xml:"Envelope"`
 	Body    ResponseBody `xml:"Body"`
 }
+
+func SoapXmlns() string {
+	return "http://schemas.xmlsoap.org/soap/envelope/"
+}
+func VatXmlns() string {
+	return "urn:ec.europa.eu:taxud:vies:services:checkVat:types"
+}
