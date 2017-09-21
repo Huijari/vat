@@ -36,6 +36,6 @@ func ErrorFromCode(code string) error {
 	case "TIMEOUT":
 		return Timeout()
 	default:
-		return errors.New("Unkown error")
+		return errors.New("Unknown error")
 	}
 }
